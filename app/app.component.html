@@ -1,0 +1,54 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<app-header></app-header>
+<div style="text-align:center">
+  <p>
+    <br />
+    </p>
+    <p>
+      <br />
+      </p>
+        
+  <h1>
+    {{ title }}!
+  
+  </h1>
+
+<!--  <img width="300" alt="Streaming Logo" src="\assets\image\buddy.jpg"> -->
+  <p>
+    <br />
+    </p>
+    <p>
+      <br />
+      </p>
+    <vg-player> 
+      <vg-controls>
+        <vg-play-pause> </vg-play-pause>
+        <vg-time-display></vg-time-display>
+        <vg-mute></vg-mute>
+        <vg-volume></vg-volume>
+        <vg-fullscreen></vg-fullscreen>
+      </vg-controls>
+      <vg-scrub-bar>
+        <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+        <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
+      </vg-scrub-bar>
+      <video  #myVideoRef src="../assets/Video/SampleVideo_1280x720_2mb.mp4"
+              [vgMedia]="myVideoRef">
+    </video>
+
+       
+    </vg-player>
+
+
+</div>
+
+
+<h2>Click link below: </h2>
+<ul>
+  <li>
+    <h3><a target="_blank" rel="noopener" href="http://localhost:3000/">Server Buddy</a></h3>
+  </li>
+</ul>
+<app-footer></app-footer>
+<router-outlet></router-outlet>
